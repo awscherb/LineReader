@@ -17,8 +17,8 @@ public class Examples {
     static String val = "The quick brown fox jumps over the lazy dog. Lorem ipsum. San Francisco, California. Philadelphia, Pennsylvania.";
 
     // IO
-    static String file = "lineQBA1000000.txt";
-    static String out = "lineQBA1000000.txt";
+    static String file = "num.txt";
+    static String out = "num.txt";
     static LineReader lr;
 
     // Start, end time
@@ -28,7 +28,7 @@ public class Examples {
     // Switches
     static boolean OUT = false;
     static boolean ARTEST = false;
-    static boolean LRTEST = true;
+    static boolean LRTEST = false;
 
     // Size for output loop
     static final int size = 1000000;
@@ -39,7 +39,7 @@ public class Examples {
                 new FileWriter(out, true));
         try {
             for (int i = 0; i < size; i = i + 1) {
-                wri.write("line\n"); // Write the line
+                wri.write("line " + i + "\n"); // Write the line
             }
         }         
         catch (IOException e) {
@@ -80,6 +80,11 @@ public class Examples {
             System.out.println("ArrayList Iteration: " + (e - s));
         }
 
+        lr = LineReader.factory(file);
+        System.out.println(lr.next());
+        lr.remove();
+        System.out.println(lr.next());
+        
         if (LRTEST) { // LineReader tests
             s = System.currentTimeMillis();
             lr = LineReader.factory(file);
