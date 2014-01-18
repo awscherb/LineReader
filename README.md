@@ -1,6 +1,8 @@
 LineReader
 ==========
 
-*Test*
+Usage
+-----
 
-**Test**
+Use the public static `factory` method to instantiate a new LineReader
+
