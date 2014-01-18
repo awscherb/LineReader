@@ -45,7 +45,7 @@ public final class LineReader implements Iterator<String>, Iterable<String> {
      */
     public static LineReader factory(String s) {
         return new LineReader(s);
-    }
+    } 
 
     /**
      * Add each line of the input file to our <code>ArrayDeque</code>
@@ -67,7 +67,7 @@ public final class LineReader implements Iterator<String>, Iterable<String> {
      * @return this
      */
     public Iterator<String> iterator() { 
-        return this;
+        return this; // This is an iterator!
     }
 
     /**

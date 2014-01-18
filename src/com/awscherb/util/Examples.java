@@ -14,11 +14,11 @@ public class Examples {
     
     // Stuff
     static ArrayList<String> ar = new ArrayList<String>();
-    static String val = "line";
+    static String val = "The quick brown fox jumps over the lazy dog. Lorem ipsum. San Francisco, California. Philadelphia, Pennsylvania.";
 
     // IO
-    static String file = "line1000000.txt";
-    static String out = "line1000000.txt";
+    static String file = "lineQBA1000000.txt";
+    static String out = "lineQBA1000000.txt";
     static LineReader lr;
 
     // Start, end time
