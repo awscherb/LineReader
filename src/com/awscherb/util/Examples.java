@@ -5,7 +5,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/** Tests, etc */
+/**
+ * Examples for LineReader
+ * @author Alex Scherb
+ * @version 1/17/14
+ */
 public class Examples {
     
     // Stuff
