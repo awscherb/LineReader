@@ -67,7 +67,7 @@ public final class LineReader implements Iterator<String>, Iterable<String> {
      * @return this
      */
     public Iterator<String> iterator() { 
-        return this; // This is an iterator!
+        return this; // This is an iterator
     }
 
     /**
