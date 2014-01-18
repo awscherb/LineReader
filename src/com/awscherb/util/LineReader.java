@@ -65,18 +65,14 @@ public final class LineReader implements Iterator<String>, Iterable<String> {
     /**
      * Return this; LineReader objects implement <code>Iterator</code> 
      * @return this
-     */
-    public Iterator<String> iterator() { 
-        return this; // This is an iterator
-    }
+     */ 
+    public Iterator<String> iterator() { return this; }
 
     /**
      * Check if this has a next
      * @return the Boolean result
      */
-    public boolean hasNext() {
-        return (!lines.isEmpty());
-    }
+    public boolean hasNext() { return (!lines.isEmpty()); }
 
     /**
      * Return the next element, if it exists, else throw an exception
@@ -91,7 +87,5 @@ public final class LineReader implements Iterator<String>, Iterable<String> {
     }
 
     /** Remove the first element */
-    public void remove() { 
-        lines.pop(); 
-    }
+    public void remove() { lines.pop(); }
 }
