@@ -49,6 +49,7 @@ I have yet to implement the `equals`, `toString`, and `hashCode` methods.
 A Note on Performance
 ---------------------
 
-Using text files with a relatively small (< 10^5) amount of lines, performance shouldn't be an issue. Text files with 10^6 or more lines will see a huge increase in the amount of time it takes to initialize the `LineReader`.
+~~Using text files with a relatively small (< 10^5) amount of lines, performance shouldn't be an issue. Text files with 10^6 or more lines will see a huge increase in the amount of time it takes to initialize the `LineReader`~~
 
-*Why someone would ever want to parse a text file with more than one million lines using my software, I do not know*
+Initialization is nearly instant; traversing will take a while, but is not completely unreasonable. 
+
