@@ -76,6 +76,7 @@ public final class LineReader implements Iterator<String>, Iterable<String> {
      */
     public boolean hasNext() {
         return (!lines.isEmpty());
+        // Test
     }
 
     /**
