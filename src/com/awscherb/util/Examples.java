@@ -28,7 +28,7 @@ public class Examples {
     // Switches
     static boolean OUT = false;
     static boolean ARTEST = false;
-    static boolean LRTEST = false;
+    static boolean LRTEST = true;
 
     // Size for output loop
     static final int size = 1000000;
@@ -79,11 +79,6 @@ public class Examples {
             e = System.currentTimeMillis();
             System.out.println("ArrayList Iteration: " + (e - s));
         }
-
-        lr = LineReader.factory(file);
-        System.out.println(lr.next());
-        lr.remove();
-        System.out.println(lr.next());
         
         if (LRTEST) { // LineReader tests
             s = System.currentTimeMillis();

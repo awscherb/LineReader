@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.Iterator;
 
 /**
@@ -31,6 +33,18 @@ public final class LineReader implements Iterator<String>, Iterable<String> {
             e.printStackTrace();
         }
     }
+    /**
+     * Constructor for parsing from URL
+     */
+    private LineReader(URL url) {
+        input = url.toString();
+        try {
+            br = new BufferedReader(new InputStreamReader(
+                    url.openStream()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * Public static factory method, invokes private constructor
@@ -39,6 +53,12 @@ public final class LineReader implements Iterator<String>, Iterable<String> {
      */
     public static LineReader factory(String s) {
         return new LineReader(s);
+    } 
+    
+    /** Factory method for parsing from URL */
+    public static LineReader factory(URL url) {
+        return new LineReader(url);
+        
     } 
 
     /**
