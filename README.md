@@ -10,7 +10,7 @@ Use the factory method to instantiate a new `LineReader`:
 
     LineReader l = LineReader.factory("file_location.txt");
     
-Treat a `LineReader` as if it were an `Iterator`; that is to say calling the `next()` method will traverse over every line in the text file you provided.
+Treat a `LineReader` as if it were an `Iterator`; that is to say calling the `next()` method will traverse every line in the text file you provided.
 
 For example, say we have a text file that looks like this:
 
